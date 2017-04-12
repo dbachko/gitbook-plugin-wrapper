@@ -1,0 +1,44 @@
+{
+  "name": "gitbook-plugin-wrapper",
+  "description": "Block plugin which wraps content with a specific tag",
+  "version": "0.0.1",
+  "author": "dbachko <dbachko@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/dbachko/gitbook-plugin-wrapper/issues"
+  },
+  "engines": {
+    "gitbook": ">2.x.x"
+  },
+  "devDependencies": {
+    "standard": "*"
+  },
+  "homepage": "https://github.com/dbachko/gitbook-plugin-wrapper",
+  "keywords": [
+    "gitbook",
+    "plugin",
+    "wrapper"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbachko/gitbook-plugin-wrapper.git"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "gitbook": {
+    "properties": {
+      "element": {
+        "type": "string",
+        "default": "div",
+        "description": "Default element tag"
+      },
+      "className": {
+        "type": "string",
+        "default": "clx",
+        "description": "Default class"
+      }
+    }
+  }
+}
